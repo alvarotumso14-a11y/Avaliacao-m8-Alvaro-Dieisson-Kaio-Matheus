@@ -1,5 +1,4 @@
 ﻿using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.Modelo;
-using ProjetoBiblioteca.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +10,7 @@ namespace ProjetoBiblioteca.Interface
     public interface IRepositorioLivro
     {
         void Adicionar(Livro livro);
-        List<Livro> ListarTodos();
+        Task<List<Livro>> ListarTodos();
         Livro BuscarPorId(int id);
 
         List<Livro> BuscarPorAutor(string autor);
