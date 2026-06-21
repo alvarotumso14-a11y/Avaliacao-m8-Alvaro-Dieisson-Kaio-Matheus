@@ -1,7 +1,5 @@
 ﻿using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.Modelo;
-using ProjetoBiblioteca.Interface;
-using ProjetoBiblioteca.Modelo;
-using ProjetoBiblioteca.RepositorioLivro;
+using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.RepositorioLivro;
 
 //Banco de dados
 var livros = new List<Livro>
