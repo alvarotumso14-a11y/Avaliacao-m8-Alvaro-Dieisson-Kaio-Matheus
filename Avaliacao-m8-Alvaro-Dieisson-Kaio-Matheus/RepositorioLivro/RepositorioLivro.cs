@@ -1,5 +1,6 @@
 ﻿using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.Execoes;
 using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.Modelo;
+using ConsoleTables;
 using Newtonsoft.Json;
 using ProjetoBiblioteca.Interface;
 using System;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Formatting = Newtonsoft.Json.Formatting;
 
 namespace Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.RepositorioLivro
 {
