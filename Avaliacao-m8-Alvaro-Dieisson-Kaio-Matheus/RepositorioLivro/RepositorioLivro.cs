@@ -27,7 +27,9 @@ namespace Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.RepositorioLivro
                 int tempo = random.Next(500, 2000);
                 await Task.Delay(tempo);
             }
-            return Livros;
+            return Livros
+                .OrderBy(p => p.Titulo)
+                .ToList();
         }
 
         public Livro BuscarPorId(int id)
