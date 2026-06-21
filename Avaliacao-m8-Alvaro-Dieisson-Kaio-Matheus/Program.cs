@@ -1,5 +1,6 @@
 ﻿using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.Modelo;
 using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.RepositorioLivro;
+using Avaliacao_m8_Alvaro_Dieisson_Kaio_Matheus.Servicos;
 
 //Banco de dados
 var livros = new List<Livro>
@@ -93,7 +94,10 @@ while (opcao != 0)
             break;
 
         case 5:
-            Console.WriteLine("Nao Conseguimos Fazer!");
+            Console.WriteLine("Qual título deseja buscar na API: ");
+            string tituloBusca = Console.ReadLine();
+            var apiService = new BibliotecaApiService();
+            await apiService.BuscarDetalhesApiAsync(tituloBusca);
             break;
 
         case 6:
